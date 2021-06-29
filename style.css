@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+p, a {
+    font-size: 16px;
+}
+
+
+.header {
+    min-height: 100vh;
+    background-color: #262626;
+}
+
+
+#particles-js{
+    min-width: 100%;
+    min-height: 100%;
+    background: #262626;
+   /* background-image: url('./assets/bgp.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+}
+
+.nav-logo {
+    margin-left: 10%;
+}
+
+.nav-link {
+    color: #fffafa !important;
+}
+
+.nav-link:hover{
+    color: #e31b6d !important;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.hero-text h1, .hero-text h2 {
+    color: white;
+    line-height: 50px;
+}
+
+.hero-text h2{
+   
+}
+
+.heading-text {
+    color: #e31b6d ;
+}
+
+.welcome-text {
+    animation-name: moveInLeft;
+    animation-duration: 1.3s;
+}
+
+.subtitle-text {
+    animation-name: moveInRight;
+    animation-duration: 1.3s;
+}
+
+.btn-check-work {
+    margin-top: 15px;
+    font-size: 16px;
+    animation-name: moveFromBottom;
+    animation-duration: 1.3s;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-check-work:hover{
+    border-color: #e31b6d !important ;
+    background-color: #e31b6d !important;
+    transition: all 0.5s;
+}
+
+/* About Me Section */
+
+#about-me {
+    /* background-color: #f9f9f9; */
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img, .about-text {
+    flex-basis: 45%;
+}
+
+.about-text h1 {
+    color: #e31b6d;
+    margin-top: 25px;
+}
+
+.about-text p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-contact {
+    margin-right: 15px;
+}
+
+
+/* My Work Section */
+.my-work {
+    max-width: 1000px;
+    margin: 25px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-custom {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    animation-name: moveInLeft;
+    animation-duration: 1.3s;
+    position: relative;
+}
+
+.heading-custom::after{
+    content:'';
+    background-color: #e31b6d ;
+    width:8rem;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform:translateX(-50%);
+    
+  
+  }
+
+.my-work h5{
+    font-family: 'Montserrat', sans-serif;
+    animation-name: moveInRight;
+    animation-duration: 1.3s;
+}
+
+.my-work .row {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 33.33%;
+    padding: 10px;
+    min-height: 250px !important;
+    max-width: 360px;
+    position: relative;
+    transition: all .3s;
+    
+}
+
+.img-col img {
+    min-width: 100%;
+    height: 240px;
+}
+
+.img-col:hover .overlay {
+    opacity: 1;
+}
+
+/* .img-col img:hover {
+    webkit-filter: blur(3px) brightness(80%); 
+    filter: blur(3px) brightness(80%);
+   
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  background-color: #141c3a;
+}
+
+.overlay-text{
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+
+.overlay-text p {
+    font-size: 15px;
+    text-transform: initial;
+}
+
+.btn-visit {
+    color: white;
+    font-size: 15px;
+    border-color: #007bff !important;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    text-transform: capitalize !important;
+}
+
+.btn-visit:hover{
+    background-color: #007bff;
+}
+
+.containerNew {
+    background-color: #252934;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+
+
+
+.contact-me {
+    text-align: center;
+    margin: 10 auto;
+    color:white;
+}
+
+.contact-me label {
+    font-size: 16px;
+}
+
+.contact-me h2 {
+    color: white;
+}
+
+.contact-me form input, .contact-me form textarea {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.btn-submit-form {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #1b242f;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a, footer ul li a:link {
+    color: white;
+
+}
+
+
+.copyright-text {
+    display: block;
+    color: #f9f9f9;
+    margin-top: 25px;
+}
+
+.copy-text {
+    color: #e31b6d;
+}
+
+.envelope-icon:hover {
+    color: black
+}
+
+/* footer img {
+    max-height: 44px;
+    margin-right: 15px;
+    width: 100%;
+}
+
+footer a:hover {
+    background-color: #e31b6d;
+} */
+
+/* Animations */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+       opacity: 0.8; 
+       transform: translateX(30px); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    80% {
+        opacity: 0.9;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    80% {
+        opacity: 0.8;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+ @media only screen and (max-width:600px) {
+
+    body{
+        overflow-x: hidden !important;
+    }
+    
+    .hero-text h1{
+        font-size: 20px;
+    }
+
+    .hero-text h2{
+        font-size: 15px;
+    }
+
+    .my-work img {
+        min-height: 200px;
+        max-width: 250px;
+        transition: all .5s;
+    }
+
+    #about-me {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .about-img {
+        max-width: 300px;
+        flex-basis: 100%;
+    }
+
+    .about-text {
+        flex-basis: 100%;
+    }
+
+    .about-img img {
+        max-width: 250px;
+    }
+
+    .contact-me {
+        overflow-x: hidden;
+    }
+
+    .contact-me form input, .contact-me form textarea {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+}
